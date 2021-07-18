@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="沒錯"/>
                                 <connections>
-                                    <segue destination="nVs-xl-nsT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="bpY-Bf-IeM"/>
+                                    <segue destination="nVs-xl-nsT" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="bpY-Bf-IeM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,7 +58,7 @@
         <!--Second View Controller-->
         <scene sceneID="GTY-J1-79E">
             <objects>
-                <viewController storyboardIdentifier="Second" modalPresentationStyle="fullScreen" id="nVs-xl-nsT" customClass="SecondViewController" customModule="Demo_009" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="nVs-xl-nsT" customClass="SecondViewController" customModule="Demo_009" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Gj-wS-CPV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
