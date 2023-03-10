@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="148" id="gPm-PZ-pde"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="沒錯"/>
+                                <state key="normal" title="沒有錯"/>
                                 <connections>
                                     <segue destination="nVs-xl-nsT" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="bpY-Bf-IeM"/>
                                 </connections>
@@ -101,7 +101,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="V5F-7B-cYf"/>
                     <connections>
-                        <outlet property="myImageView" destination="f10-8b-wlU" id="IrQ-AV-oVe"/>
+                        <outlet property="myBottomImageView" destination="f10-8b-wlU" id="IrQ-AV-oVe"/>
                         <outlet property="myMiddleImageView" destination="5S2-sm-e8C" id="Lws-Cd-cyc"/>
                     </connections>
                 </viewController>
