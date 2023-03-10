@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,9 +64,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-Ju-9jn">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-Ju-9jn">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="5is-ib-79u" kind="embed" id="WEp-gl-Cr2"/>
                                 </connections>
@@ -87,12 +87,16 @@
                         <viewLayoutGuide key="safeArea" id="KRp-st-ylr"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
+                            <constraint firstItem="7iD-Ju-9jn" firstAttribute="trailing" secondItem="KRp-st-ylr" secondAttribute="trailing" id="89i-CB-39A"/>
                             <constraint firstItem="f10-8b-wlU" firstAttribute="leading" secondItem="KRp-st-ylr" secondAttribute="leading" constant="16" id="8aq-QX-wAJ"/>
+                            <constraint firstItem="7iD-Ju-9jn" firstAttribute="leading" secondItem="KRp-st-ylr" secondAttribute="leading" id="9Jk-QJ-HgX"/>
+                            <constraint firstItem="7iD-Ju-9jn" firstAttribute="bottom" secondItem="KRp-st-ylr" secondAttribute="bottom" id="BoX-sH-0W0"/>
                             <constraint firstItem="f10-8b-wlU" firstAttribute="bottom" secondItem="KRp-st-ylr" secondAttribute="bottom" id="KNm-3x-m1F"/>
                             <constraint firstItem="5S2-sm-e8C" firstAttribute="centerX" secondItem="8Gj-wS-CPV" secondAttribute="centerX" id="Rct-Or-Pgs"/>
                             <constraint firstItem="KRp-st-ylr" firstAttribute="trailing" secondItem="f10-8b-wlU" secondAttribute="trailing" constant="16" id="W1y-Zz-i7c"/>
                             <constraint firstItem="5S2-sm-e8C" firstAttribute="centerY" secondItem="8Gj-wS-CPV" secondAttribute="centerY" id="WIC-o7-CMZ"/>
                             <constraint firstItem="f10-8b-wlU" firstAttribute="top" secondItem="5S2-sm-e8C" secondAttribute="bottom" constant="8" symbolic="YES" id="iuZ-mq-aqW"/>
+                            <constraint firstItem="7iD-Ju-9jn" firstAttribute="top" secondItem="8Gj-wS-CPV" secondAttribute="top" constant="44" id="ugw-Me-CAy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V5F-7B-cYf"/>
@@ -118,12 +122,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="162148129517644_P12319161" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-Gx-Jhd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="162148129517644_P12319161" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-Gx-Jhd">
                                 <rect key="frame" x="0.0" y="-116" width="375" height="734"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="eOE-CP-Nxv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PLi-Gx-Jhd" firstAttribute="top" secondItem="fE8-70-g98" secondAttribute="top" constant="-116" id="M1v-se-N7u"/>
+                            <constraint firstItem="PLi-Gx-Jhd" firstAttribute="trailing" secondItem="eOE-CP-Nxv" secondAttribute="trailing" id="fQR-zV-MCh"/>
+                            <constraint firstItem="PLi-Gx-Jhd" firstAttribute="leading" secondItem="eOE-CP-Nxv" secondAttribute="leading" id="gFm-sF-tFw"/>
+                            <constraint firstItem="eOE-CP-Nxv" firstAttribute="bottom" secondItem="PLi-Gx-Jhd" secondAttribute="bottom" constant="116" id="kbm-an-rgO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Fl-DV-FtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
